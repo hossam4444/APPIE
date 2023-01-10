@@ -493,10 +493,6 @@
   margin-bottom: 1.4rem;
 }
 
-.vid-start-btn {
-  display: inline-block;
-}
-
 .prev-col {
 }
 
@@ -603,4 +599,160 @@
 .download-os {
   font-size: 2.4rem;
   font-weight: 700;
+}
+
+/* 
+############# pricing #############
+*/
+
+.section-pricing {
+  padding: 9.2rem 0;
+}
+
+.pricing-heading {
+  text-align: center;
+  margin-bottom: 6.4rem;
+}
+
+.pricing-duration {
+  margin: 0 auto 4.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border: 2px solid #eee;
+  border-radius: 100px;
+  padding: 3px;
+  width: fit-content;
+}
+
+.monthly,
+.yearly {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1.2rem 2.4rem;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+}
+
+.monthly {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.yearly {
+  color: #555;
+  background-color: #fff;
+}
+
+.pricing-cards {
+  gap: 3.2rem;
+}
+
+.pricing-card {
+  padding: 4.8rem 3.2rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  /* width: fit-content; */
+}
+
+.most-popular {
+  border-top: 3px solid var(--main-color);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 22px 40px 4px rgb(1 1 1 / 10%);
+}
+.most-popular::before {
+  content: "Most Popular";
+  background-color: #2a6df5;
+  color: #fff;
+  padding: 0.8rem 1.8rem;
+  padding-right: 3.2rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  border-radius: 100px;
+  position: absolute;
+  right: -18px;
+  top: 23px;
+}
+
+.most-popular .btn {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.card-title {
+  font-size: 2.4rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+  color: var(--font-color);
+}
+
+.card-price-box {
+  margin-bottom: 1.6rem;
+  display: flex;
+}
+
+.card-price {
+  font-size: 5.2rem;
+  font-weight: 900;
+  color: var(--font-color);
+}
+
+.card-currency {
+  font-size: 2.7rem;
+  padding: 7px 5px 0 0;
+  color: var(--font-color);
+}
+
+.card-duration {
+  font-size: 1.4rem;
+  padding-bottom: 0.5rem;
+  color: #444;
+  align-self: flex-end;
+}
+
+.card-offer {
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 2.4rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2.4rem;
+}
+
+.card-advantages {
+  margin-bottom: 3.2rem;
+}
+
+.card-advantages ul {
+  list-style: none;
+  color: var(--font-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.advantage-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pricing-chec-icon {
+  font-size: 1.6rem;
+  color: #2a6df5;
+  background-color: rgba(42, 110, 245, 0.08);
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.premium .pricing-chec-icon {
+  color: #33c956;
+  background-color: rgba(51, 201, 86, 0.08);
+}
+
+.card-advantage-p {
+  font-size: 1.4rem;
+  font-weight: 500;
 }
