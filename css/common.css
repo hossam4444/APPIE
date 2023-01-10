@@ -1,0 +1,176 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+- Letter spacing
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary: #e67e22
+- Tints:
+#fdf2e9
+#fae5d3
+#eb984e
+
+- Shades: 
+#cf711f
+#45260a
+
+- Accents:
+- Greys
+
+#888
+#767676 (lightest grey allowed on #fff)
+#6f6f6f (lightest grey allowed on #fdf2e9)
+#555
+#333
+
+--- 05 SHADOWS
+
+0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* Colors
+I Had to Figure it out manually using photoShop ಥ_ಥ
+  Main: #ff3e66
+  font-color: #0e1133
+  most-popular: #2a6df5;
+  
+  icons-bg:-
+  1: #2facfc
+  2: #ea4d89
+  3: #3679ff
+  4: #f67842
+  5: #6b88f7
+  6: #3bb094
+
+  dots:
+  red: #ff3e66
+  blue: #2eacfc
+  green: #33c956
+
+  hero-section-bg: #eef1f6 full
+  imperetion-section-bg: #f0f1f7 fit
+  wherever-section-bg: #0e1133 full
+  footer-section-bg: #eef1f6 full
+  */
+:root {
+  --main-color: #ff3e66;
+  --alt-main-color: #e91e63;
+  --font-color: #0e1133;
+  --section-bg: #eef1f6;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  /* font-size 1rem = 10px; */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 1.8rem;
+  row-gap: 1.8rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.heading-primary {
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 1.05;
+  color: var(--font-color);
+  margin-bottom: 2.4rem;
+}
+
+.heading-secondary {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2.4rem;
+}
+
+.subheading {
+  font-size: 1.6rem;
+  color: var(--main-color);
+  margin-bottom: 1.6rem;
+}
+
+.btn,
+.btn:link,
+btn:visited {
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1.2rem 2.4rem;
+  border-radius: 100px;
+  border: 2px solid #eee;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--main-color);
+  color: #fff;
+}
