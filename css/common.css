@@ -159,7 +159,7 @@ body {
 
 .btn,
 .btn:link,
-btn:visited {
+.btn:visited {
   display: inline-block;
   font-size: 1.6rem;
   text-decoration: none;

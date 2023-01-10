@@ -38,14 +38,15 @@
   width: 15px;
 }
 
-.start-btn {
+.header .start-btn:link,
+.header .start-btn:visited {
   margin-left: auto;
   background-color: var(--main-color);
   color: #fff;
 }
 
-.start-btn:hover,
-.start-btn:active {
+.header .start-btn:hover,
+.header .start-btn:active {
   background-color: var(--alt-main-color);
   color: #fff;
 }
