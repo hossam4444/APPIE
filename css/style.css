@@ -47,6 +47,7 @@
 .start-btn:hover,
 .start-btn:active {
   background-color: var(--alt-main-color);
+  color: #fff;
 }
 
 /* 
