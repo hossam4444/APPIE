@@ -142,7 +142,7 @@ body {
   font-size: 5rem;
   line-height: 1.05;
   color: var(--font-color);
-  margin-bottom: 2.4rem;
+  margin-bottom: 2.3rem;
 }
 
 .heading-secondary {
@@ -174,4 +174,28 @@ body {
 .btn:active {
   background-color: var(--main-color);
   color: #fff;
+}
+
+.prev-next {
+  margin-left: auto;
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+}
+
+.p-n-icon-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.p-n-icon {
+  font-size: 2rem;
+  color: #6d6d6d;
 }
