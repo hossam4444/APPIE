@@ -35,6 +35,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
     <title>APPIE | Make Your Apps 📱</title>
   </head>
   <body>
@@ -78,7 +79,10 @@
       </nav>
 
       <a class="btn start-btn" href="#">Get Started</a>
+
+      <ion-icon class="burger" name="menu"></ion-icon>
     </header>
+
     <main>
       <section class="section-hero">
         <div class="hero container grid grid--2-cols">
@@ -144,6 +148,10 @@
           </div>
         </div>
       </section>
+
+      <a href="#" class="to-top" title="Go To Top"
+        ><ion-icon name="arrow-up-outline"></ion-icon>
+      </a>
 
       <section class="section-how">
         <div class="section-how-head container">
@@ -276,7 +284,7 @@
 
       <section class="section-features-2">
         <div class="features-2 container">
-          <div class="features-2-header">
+          <div class="features-2-header container">
             <div class="heading-primary">Wherever you need us the most</div>
             <div class="heading-secondary">
               The full monty spiiffing good time no biggie cack grub fantastic.
@@ -739,7 +747,9 @@
         <div class="footer-info">
           <div class="appie">
             <div class="footer-logo">
-              <img src="imgs/logo.png" alt="APPIE Logo Text" />
+              <a href="#">
+                <img src="imgs/logo.png" alt="APPIE Logo Text" />
+              </a>
             </div>
             <p class="logo-subdescription">
               Appie WordPress theme is the last theme you will ever have.

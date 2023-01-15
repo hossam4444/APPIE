@@ -51,16 +51,29 @@
   color: #fff;
 }
 
+/* ##########  MOBILE  ########### */
+
+.burger {
+  padding: 3px;
+  cursor: pointer;
+  font-size: 3rem;
+  margin-left: 1.4rem;
+  color: #333;
+  display: none;
+}
+
 /* 
 ############# HERO #############
 */
 .section-hero {
   background-color: var(--section-bg);
   padding: 4.8rem 0 9.2rem 0;
+  overflow: hidden;
+  position: relative;
+  min-height: 86vh;
 }
 .hero {
   align-items: center;
-  /* height: 100vh; */
   color: var(--font-color);
 }
 
@@ -123,12 +136,11 @@
   position: absolute;
 }
 
-.hero-cover-img {
-  align-self: end;
-}
-
 .hero-img {
-  width: 100%;
+  width: 57%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .feedback {
@@ -169,6 +181,29 @@
 .count-title {
   font-size: 1.2rem;
   color: #333;
+}
+
+/* 
+#############  TO-TOP ########
+*/
+
+main {
+  position: relative;
+}
+
+.to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2.4rem;
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 6px;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
 }
 
 /* 
@@ -410,8 +445,8 @@
 }
 
 .how-2-vid {
-  display: grid;
-  grid-template-columns: 1fr auto;
+  display: flex;
+
   gap: 2.4rem;
 }
 
@@ -464,8 +499,11 @@
   font-size: 2.4rem;
 }
 
+.vid-img {
+  max-width: 100%;
+}
+
 .text-cont {
-  transform: translateX(6.4rem);
   max-width: 70rem;
 }
 
@@ -486,6 +524,10 @@
 
 .prev-img-cont {
   margin-bottom: 2.4rem;
+}
+
+.prev-img {
+  max-width: 100%;
 }
 
 /* 
@@ -729,7 +771,7 @@
 .testimonials-blue-box {
   background-image: url("../imgs/testimonial-bg-2.jpg");
   background-size: cover;
-  min-height: 45rem;
+  min-height: 40rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -891,6 +933,10 @@
   color: #000;
 }
 
+.social-item:hover {
+  box-shadow: 0 0 10px 3px rgb(0 0 0 / 5%);
+}
+
 .facebook:hover .social-logo {
   color: #3b5998;
 }
@@ -958,7 +1004,7 @@
 .downloads {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .foot-btn {
@@ -981,7 +1027,7 @@
 }
 
 .foot-btn-icon {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .foot-android {
