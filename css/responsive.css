@@ -128,7 +128,7 @@
   }
 
   .hero-img {
-    width: 40%;
+    max-width: 35%;
   }
 
   .section-how-head {

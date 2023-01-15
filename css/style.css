@@ -137,7 +137,7 @@
 }
 
 .hero-img {
-  width: 57%;
+  max-width: 50%;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -610,7 +610,8 @@ main {
 */
 
 .section-pricing {
-  padding: 9.2rem 0;
+  padding-top: 9.2rem;
+  padding-bottom: 9.2rem;
 }
 
 .pricing-heading {
